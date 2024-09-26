@@ -15,11 +15,22 @@ const About = () => {
   return (
     <section className='section' id='about' ref={ref}>
       <div className='container mx-auto'>
-        <div>
+        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
           {/* image */}
-          <div className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'></div>
+          <motion.div
+            variants={fadeIn('right', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'
+          ></motion.div>
           {/* text */}
-          <div className='flex-1'>
+          <motion.div
+          variants={fadeIn('left', 0.5)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.3 }}
+           className='flex-1'>
             <h2 className='h2 text-accent'>About me.</h2>
             <h3 className='h3 mb-4'>
               I am a passionate software developer with a background in Computer Science and Machine Learning.
@@ -30,7 +41,7 @@ const About = () => {
             {/* stats */}
             <div className='flex gap-x-6 lg:gapx10 mb-12'>
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                <div className='text-[35px] font-tertiary text-gradient mb-2'>
                   {InView ? <CountUp start={0} end={3} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
@@ -39,7 +50,7 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                <div className='text-[35px] font-tertiary text-gradient mb-2'>
                   {InView ? <CountUp start={0} end={50} duration={3} /> : null}
                   +
                 </div>
@@ -49,7 +60,7 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                <div className='text-[35px] font-tertiary text-gradient mb-2'>
                   {InView ? <CountUp start={0} end={85} duration={3} /> : null}
                   k+
                 </div>
@@ -59,7 +70,7 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                <div className='text-[35px] font-tertiary text-gradient mb-2'>
                   {InView ? <CountUp start={0} end={26} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
@@ -74,7 +85,7 @@ const About = () => {
                 My Portfolio
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
