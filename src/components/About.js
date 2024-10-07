@@ -36,7 +36,7 @@ const About = () => {
               I am a passionate software developer with a background in Computer Science and Machine Learning.
             </h3>
             <p className='mb-6'>
-              I specialize in building interactive applications.
+            I specialize in full-stack development with a passion for integrating AI to build smart, efficient solutions from front to back.
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gapx10 mb-12'>
@@ -51,7 +51,7 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[35px] font-tertiary text-gradient mb-2'>
-                  {InView ? <CountUp start={0} end={50} duration={3} /> : null}
+                  {InView ? <CountUp start={0} end={30} duration={3} /> : null}
                   +
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
@@ -61,7 +61,7 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[35px] font-tertiary text-gradient mb-2'>
-                  {InView ? <CountUp start={0} end={85} duration={3} /> : null}
+                  {InView ? <CountUp start={0} end={20} duration={3} /> : null}
                   k+
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
@@ -71,7 +71,7 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[35px] font-tertiary text-gradient mb-2'>
-                  {InView ? <CountUp start={0} end={26} duration={3} /> : null}
+                  {InView ? <CountUp start={0} end={22} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
                   Known Technologies <br />

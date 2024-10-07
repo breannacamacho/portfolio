@@ -41,9 +41,11 @@ const Banner = () => {
                 sequence={[
                   'Developer',
                   2000,
-                  'AI Innovator',
+                  'Problem Solver',
                   2000,
-                  'Visionary',
+                  'AI Engineer',
+                  2000,
+                  'Strategist',
                   2000,
                 ]}
                 speed={50}
@@ -59,7 +61,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'
             >
-              random text for idk what yet
+              Combining technical expertise with a love for problem-solving, I craft dynamic and intelligent solutions.
             </motion.p>
             <motion.div
               variants={fadeIn('up', 0.6)}
