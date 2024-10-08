@@ -2,7 +2,7 @@ import React from 'react';
 //images
 import Image from '../assets/4.png'
 //icons
-import { FaGithub, FaYoutube, FaDribbble, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 //type animation
 import { TypeAnimation } from 'react-type-animation';
 //motion
@@ -71,7 +71,7 @@ const Banner = () => {
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
               <button className='btn btn-lg'>Contact me</button>
-              <a href='#' className='text-gradient btn-link'>
+              <a href='https://www.breannacamacho.com' className='text-gradient btn-link'>
                 My Portfolio
               </a>
             </motion.div>

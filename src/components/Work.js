@@ -5,8 +5,6 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 //image
 import Img1 from '../assets/portfolio-img.png'
-import Img2 from '../assets/portfolio-img.png'
-import Img3 from '../assets/portfolio-img.png'
 
 const Work = () => {
   return (

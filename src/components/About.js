@@ -2,7 +2,7 @@ import React from 'react';
 // countup
 import CountUp from 'react-countup';
 // intersection observer
-import { InView, useInView } from 'react-intersection-observer';
+import { useInView } from 'react-intersection-observer';
 // motion
 import { motion } from 'framer-motion';
 //variant
@@ -81,7 +81,7 @@ const About = () => {
             </div>
             <div className='flex gap-x-8 items-center'>
               <button className='btn btn-lg'>Contact me</button>
-              <a href='#' className='text-gradient btn-link'>
+              <a href='https://www.breannacamacho.com' className='text-gradient btn-link'>
                 My Portfolio
               </a>
             </div>
